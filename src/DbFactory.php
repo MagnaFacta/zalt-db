@@ -6,7 +6,7 @@
  * @subpackage Db
  * @author     Matijs de Jong <mjong@magnafacta.nl>
  * @copyright  Copyright (c) 2016, MagnaFacta B.V.
- * @license    No free license, do not copy
+ * @license    New BSD License
  */
 
 namespace Zalt\Db;
@@ -18,7 +18,7 @@ use Zend\Db\Adapter\Adapter;
  * @package    Zalt
  * @subpackage Db
  * @copyright  Copyright (c) 2016, MagnaFacta B.V.
- * @license    No free license, do not copy
+ * @license    New BSD License
  * @since      Class available since version 1.8.1 Oct 21, 2016 3:29:19 PM
  */
 class DbFactory
@@ -30,11 +30,11 @@ class DbFactory
 
                 $db->getDriver()->getConnection()->connect();
 
-                return $db;
+                return new DbBridge($db);
             };
         }
         return function() use ($dbConfig) {
-            return new Adapter($dbConfig);
+            return new DbBridge(new Adapter($dbConfig));
         };
     }
 }
