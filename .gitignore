@@ -1,2 +1,4 @@
-nbproject/
-/nbproject
+composer.phar
+/vendor/
+/nbproject/
+/composer.lock
