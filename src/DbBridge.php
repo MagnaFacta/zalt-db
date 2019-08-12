@@ -50,6 +50,7 @@ class DbBridge implements AdapterInterface
      * @param Sql|null                                                                  $sql
      *
      * @throws Exception\InvalidArgumentException
+     * @return Zalt\Db\TableGateway\TableGateway
      */
     public function createTableGateway($table, $features = null, ResultSetInterface $resultSetPrototype = null, Sql $sql = null)
     {
