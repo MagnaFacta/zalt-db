@@ -11,7 +11,7 @@
 
 namespace Zalt\Db;
 
-use Zend\Db\Adapter\Adapter;
+use Laminas\Db\Adapter\Adapter;
 
 /**
  *

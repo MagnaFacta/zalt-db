@@ -11,7 +11,8 @@
 
 namespace Zalt\Db\TableGateway;
 
-use Zend\Db\TableGateway\TableGateway as ZendTableGateway;
+use Laminas\Db\TableGateway\TableGateway as LaminasTableGateway;
+
 /**
  *
  * @package    Zalt
@@ -20,7 +21,7 @@ use Zend\Db\TableGateway\TableGateway as ZendTableGateway;
  * @license    New BSD License
  * @since      Class available since version 1.8.1 Oct 22, 2016 8:21:43 PM
  */
-class TableGateway extends ZendTableGateway
+class TableGateway extends LaminasTableGateway
 {
     public function fetchRow($where = null, $order = null)
     {

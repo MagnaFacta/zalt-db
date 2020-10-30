@@ -11,7 +11,7 @@
 
 namespace Zalt\Db\Sql\Literal;
 
-use Zend\Db\Sql\Literal;
+use Laminas\Db\Sql\Literal;
 
 /**
  *
